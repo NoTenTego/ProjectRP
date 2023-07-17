@@ -1,0 +1,48 @@
+body {
+  width: 400px;
+}
+
+.characterCreation {
+  max-height: 80%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+.characterCreation:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 2.5%;
+  transform: translate(-2.5%, -50%);
+}
+
+.characterCreation:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+  transform: translate(-2.5%, -50%);
+}
+
+.under-rangeDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .under-range {
+    width: 90%;
+  }
+
+  .under-rangeClear {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-weight: 700;
+  }
+}
+
+.error {
+  color: black;
+}
