@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #hud {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .compass {
+    font-size: 48px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 1.5%;
+    left: 17.5%;
+  
+    .vicinity {
+      color: rgb(255, 255, 255);
+      font-size: 28px;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      .street {
+        color: rgb(240, 200, 80);
+      }
+      
+      .zone {
+        font-size: 24px;
+        position: relative;
+        top: -3px;
+      }
+      
+      .shadow-stroke {
+        text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000, 2px 3px 2px rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+  
+  .hud{
+    font-size: 30px;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    text-align: right;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000, 2px 3px 2px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+  
+    .money{
+      color: rgb(240, 200, 80);
+    }
+  }
